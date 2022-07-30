@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random App</title>
+        <link rel = "icon" href ="favicon.jpg"type = "image/x-icon">
+    </head>
+    <body>
+        <h2>Người thuyết trình đầu tiên:</h2>
+        <p id="demo"></p>
+        <button onclick="myFunction()">Random</button>
+        <script>
+            let sortRandomMember = [];
+            const member = new Map([
+            [1,"Nguyễn Duy Hậu"],
+            [2,"Nguyễn Ngô Diễm Quỳnh"],
+            [3,"Lưu Vĩnh Khôi"],
+            [4,"Kiều Thị Lệ Hoa"]
+            ]);
+            function myFunction() {
+                alert("nguoi dau tien " + member.get(Math.floor(Math.random() * 4) +1));
+            }
+        </script>
+</html>
